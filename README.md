@@ -1,1 +1,1 @@
-This repo documents ALX low level programming practices
+This repo documents ALX low level programming tasks.
