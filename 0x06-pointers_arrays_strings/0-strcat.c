@@ -1,19 +1,29 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 /**
- * main - entry point of the program
- * the program should concat two strings
- * Return : always 0
-*/
-
-int main()
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: void
+ */
+char *_strcat(char *dest, char *src)
 {
-	char first[20] = "Kelvin";
-	char last[20] = "Kahuho";
+	int i;
+	int j;
 
-	strcat(first, last);
-	
-	printf("%s", first);
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 
-	return 0;
+	dest[i] = '\0';
+	return (dest);
 }
